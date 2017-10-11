@@ -1,11 +1,4 @@
-@import 'partials/footer';
-
-$primary: #14133d;
-$secondary: #57b2b3;
-$primary-accent: #007597;
-$secondary-accent: #bbd8bd;
-$primary-text: #434343;
-$secondary-text: #fff;
+@import 'partials/variables', 'partials/footer';
 
 body {
   background-color: $primary;
@@ -16,11 +9,12 @@ header,footer {
   background-color: white;
 }
 
-.container {
-  color: $primary-text;
-  width: 800px;
-  h3 {
-    color: $secondary-text;
+.main-container {
+  //width: 800px;
+  div.container {
+  font-family: $primary-font;
+  color: $secondary-text;
+  width: 600px;
   }
 }
 
@@ -37,4 +31,10 @@ header,footer {
     #main-menu {
         float: none;
     }
+}
+
+//button styles, will likely need to change id and make a mixin for all buttons on site
+#btn-login {
+  background-color: $secondary;
+  border-color: $secondary;
 }

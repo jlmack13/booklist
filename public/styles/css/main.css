@@ -1,13 +1,6 @@
 footer {
-  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-  height: 60px;
-  /*  position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 1rem;
-    background-color: #efefef;
-    text-align: center;*/ }
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 60px; }
   footer #footer-right {
     float: right;
     text-align: right;
@@ -30,11 +23,10 @@ body {
 header, footer {
   background-color: white; }
 
-.container {
-  color: #434343;
-  width: 800px; }
-  .container h3 {
-    color: #fff; }
+.main-container div.container {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  width: 600px; }
 
 #main-logo {
   margin: auto;
@@ -48,5 +40,8 @@ header, footer {
 @media (min-width: 768px) {
   #main-menu {
     float: none; } }
+#btn-login {
+  background-color: #57b2b3;
+  border-color: #57b2b3; }
 
 /*# sourceMappingURL=main.css.map */
