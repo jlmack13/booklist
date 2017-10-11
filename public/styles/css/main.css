@@ -26,7 +26,19 @@ header, footer {
 .main-container div.container {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
-  width: 600px; }
+  width: 800px; }
+  .main-container div.container form {
+    width: 600px;
+    margin: auto; }
+
+.home-buttons-container {
+  margin-left: 34%; }
+  .home-buttons-container button {
+    background-color: #57b2b3;
+    border-color: #57b2b3; }
+    .home-buttons-container button:hover {
+      background-color: #007597;
+      border-color: #007597; }
 
 #main-logo {
   margin: auto;
@@ -43,5 +55,8 @@ header, footer {
 #btn-login {
   background-color: #57b2b3;
   border-color: #57b2b3; }
+  #btn-login:hover {
+    background-color: #007597;
+    border-color: #007597; }
 
 /*# sourceMappingURL=main.css.map */

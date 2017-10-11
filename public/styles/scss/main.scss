@@ -12,9 +12,25 @@ header,footer {
 .main-container {
   //width: 800px;
   div.container {
-  font-family: $primary-font;
-  color: $secondary-text;
-  width: 600px;
+    font-family: $primary-font;
+    color: $secondary-text;
+    width: 800px;
+    form {
+      width: 600px;
+      margin: auto;
+    }
+  }
+}
+
+.home-buttons-container {
+  margin-left: 34%;
+  button {
+    background-color: $secondary;
+    border-color: $secondary;
+    &:hover {
+      background-color: $primary-accent;
+      border-color: $primary-accent;
+    }
   }
 }
 
@@ -33,8 +49,12 @@ header,footer {
     }
 }
 
-//button styles, will likely need to change id and make a mixin for all buttons on site
+//TO DO: button styles, will likely need to change id and make a mixin for all buttons on site
 #btn-login {
   background-color: $secondary;
   border-color: $secondary;
+  &:hover {
+    background-color: $primary-accent;
+    border-color: $primary-accent;
+  }
 }
