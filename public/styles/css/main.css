@@ -19,6 +19,8 @@ footer {
 body {
   background-color: #14133d;
   position: relative; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #fff; }
 
 header, footer {
   background-color: white; }
