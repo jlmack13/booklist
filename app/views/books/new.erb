@@ -1,7 +1,7 @@
 <div class="container">
   <form class="books-form" action="/books" method="post">
     <h1>Create a New Book Here: </h1>
-
+    <h3>Note: All fields are optional <em>except</em> "Title".</h3>
     <!-- Title -->
     <div class="form-group">
       <label for="title">Title</label>
@@ -21,5 +21,20 @@
       <span class="help-block">Please enter the number of pages in your book.</span>
     </div>
 
+    <!-- Format -->
+    <div class="form-group">
+      <label for="format">Format</label>
+      <input type="radio" name="format" class="form-control" value="Paperback/Hardback">Paperback/Hardback</input>
+      <input type="radio" name="format" class="form-control" value="eBook">eBook</input>
+      <input type="radio" name="format" class="form-control" value="Audiobook">AudioBook</input>
+      <span class="help-block">Please choose the format in which you read your book.</span>
+    </div>
+
+    <!-- Favorite  -->
+    <div class="form-group">
+      <label for="favorite">Favorite?</label>
+      <input type="checkbox" name="favorite" class="form-control" value="true">
+    </div>
+  
   </form>
 </div>
