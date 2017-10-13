@@ -54,10 +54,13 @@ header, footer {
 @media (min-width: 768px) {
   #main-menu {
     float: none; } }
-#btn-login {
+form.delete-button {
+  display: inline-block; }
+
+#btn-main, #btn-edit, #btn-delete {
   background-color: #57b2b3;
   border-color: #57b2b3; }
-  #btn-login:hover {
+  #btn-main:hover, #btn-edit:hover, #btn-delete:hover {
     background-color: #007597;
     border-color: #007597; }
 

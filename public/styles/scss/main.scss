@@ -53,7 +53,10 @@ header,footer {
 }
 
 //TO DO: button styles, will likely need to change id and make a mixin for all buttons on site
-#btn-login {
+form.delete-button {
+  display: inline-block;
+}
+#btn-main, #btn-edit, #btn-delete {
   background-color: $secondary;
   border-color: $secondary;
   &:hover {
