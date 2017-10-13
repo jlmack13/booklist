@@ -28,14 +28,18 @@ class GoalsController < ApplicationController
       previous_goal = Goal.find_by(active: true)
       previous_goal.update(active: false)
       @goal = current_user.goals.create(target_number: params[:target_number], active: true)
-      binding.pry
-      redirect to '/books'
+      redirect to "/goals/#{@goal.id}"
     end
   end
 
   #show one goal
   get '/goals/:id' do
-
+    @goal = Goal.find_by_id(params[:id])
+    if logged_in? && @goal.user_id == current_user.id
+      erb :'goals/show'
+    else
+      redirect to '/'
+    end
   end
 
   #edit a goal

@@ -6,5 +6,5 @@ use Rack::MethodOverride
 
 use UsersController
 use BooksController
-#use GoalsController ***IF GOALS
+use GoalsController
 run ApplicationController
