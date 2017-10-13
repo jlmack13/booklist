@@ -1,6 +1,8 @@
-<h3>Welcome, <%=@user.name%>! These are your books: </h3>
-<ul class="booklist list-group">
-  <% @books.each do |book| %>
-  <li class="book list-group-item"><%=book.title%></li>
-  <% end %>
-</ul>
+<div class="container">
+  <h3>Welcome, <%=@user.name%>! These are your books: </h3>
+  <ul class="booklist list-group">
+    <% @books.each_with_index do |book, index| %>
+    <li class="book list-group-item"><strong><%= index + 1%>.</strong> &emsp; <%=book.title%></li>
+    <% end %>
+  </ul>
+</div>

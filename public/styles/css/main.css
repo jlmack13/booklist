@@ -29,6 +29,8 @@ header, footer {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   width: 800px; }
+  .main-container div.container li {
+    color: #434343; }
   .main-container div.container form {
     width: 600px;
     margin: auto; }

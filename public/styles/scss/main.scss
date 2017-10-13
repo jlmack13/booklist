@@ -17,6 +17,9 @@ header,footer {
   div.container {
     font-family: $primary-font;
     color: $secondary-text;
+    li {
+      color: $primary-text;
+    }
     width: 800px;
     form {
       width: 600px;
