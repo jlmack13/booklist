@@ -31,25 +31,32 @@ class BooksController < ApplicationController
 
   #show one book
   get '/books/:id' do
-    if logged_in?
-      @book = Book.find_by_id(params[:id])
+    @book = Book.find_by_id(params[:id])
+    if logged_in? && @book.user_id == current_user.id
       erb :'/books/show'
     else
-      redirect to '/'
+      redirect to '/books'
     end
   end
 
   #edit a book
   get '/books/:id/edit' do
-    if logged_in?
-
+    @book = Book.find_by_id(params[:id])
+    if logged_in? && @book.user_id == current_user.id
+      erb :'/books/edit'
     else
       redirect to '/'
     end
   end
 
   patch '/books/:id' do
-
+    if params[:title] == ""
+      redirect to "/books/#{params[:id]}/edit"
+    else
+      @book = Book.find_by_id(params[:id])
+      @book.update(title: params[:title], author: params[:author], length: params[:length], format: params[:format], favorite: params[:favorite])
+      redirect to "/books/#{params[:id]}"
+    end
   end
 
   #delete a book
