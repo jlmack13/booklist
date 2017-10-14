@@ -25,9 +25,9 @@
     <!-- Format -->
     <label for="format">Format</label>
     <div class="form-group">
-      <input type="radio" name="format" class="" value="Paperback/Hardback" <%='checked' if @book.format == "Paperback/Hardback"%> >Paperback/Hardback</input>
-      <input type="radio" name="format" class="" value="eBook" <%='checked' if @book.format == "eBook"%> >eBook</input>
-      <input type="radio" name="format" class="" value="Audiobook" <%='checked' if @book.format == "Audiobook"%> >AudioBook</input>
+      <input type="radio" name="format" class="format-option" value="Paperback/Hardback" <%='checked' if @book.format == "Paperback/Hardback"%> >Paperback/Hardback</input>
+      <input type="radio" name="format" class="format-option" value="eBook" <%='checked' if @book.format == "eBook"%> >eBook</input>
+      <input type="radio" name="format" class="format-option" value="Audiobook" <%='checked' if @book.format == "Audiobook"%> >AudioBook</input>
       <span class="help-block">Please choose the format in which you read your book.</span>
     </div>
 
@@ -39,6 +39,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary" id="btn-edit">Edit Book</button>
+    <a href="/books" class="btn btn-danger">Cancel</a>
 
   </form>
 </div>

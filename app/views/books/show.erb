@@ -1,17 +1,21 @@
 <div class="container">
-  <h1><%= @book.title%></h1>
-  <h4>Author: <%= @book.author%></h4>
-  <h4>Length: <% if @book.length != nil %> <%= @book.length%> Pages <%end %> </h4>
-  <h4>Format: <%= @book.format%></h4>
-  <% if @book.favorite %>
-    <h4>Favorite: <img src="/images/star.png" alt="star" width="20px"></h4>
-  <% else %>
-    <h4>Favorite: <img src="/images/xmark.png" alt="x mark" width="20px"></h4>
-  <% end %>
+  <div class="info-container">  
+    <h1><%= @book.title%></h1>
+    <h4>Author: <%= @book.author%> <% if @book.author == "" %> <em class="no-info">No Information Provided</em> <%end%></h4>
+    <h4>Length: <% if @book.length != nil %> <%= @book.length%> Pages <%end %> <% if @book.length == nil %> <em class="no-info">No Information Provided</em> <%end%> </h4>
+    <h4>Format: <%= @book.format%> <% if @book.format == nil %> <em class="no-info">No Information Provided</em> <%end%> </h4>
+    <% if @book.favorite %>
+      <h4>Favorite: <img src="/images/star.png" alt="star" width="20px"></h4>
+    <% else %>
+      <h4>Favorite: <img src="/images/xmark.png" alt="x mark" width="20px"></h4>
+    <% end %>
+  </div>
 
-  <a href="/books/<%= @book.id %>/edit"><button type="submit" class="btn btn-primary" id="btn-edit">Edit Book</button></a>
-  <form class="delete-button" action="/books/<%= @book.id %>/delete" method="post">
-    <input id="hidden" type="hidden" name="_method" value="DELETE">
-    <button type="submit" class="btn btn-primary" id="btn-delete">Delete Book</button>
-  </form>
+  <div class="buttons-container">
+    <a href="/books/<%= @book.id %>/edit"><button type="submit" class="btn btn-primary" id="btn-edit">Edit Book</button></a>
+    <form class="delete-button" action="/books/<%= @book.id %>/delete" method="post">
+      <input id="hidden" type="hidden" name="_method" value="DELETE">
+      <button type="submit" class="btn btn-danger">Delete Book</button>
+    </form>
+  </div>
 </div>

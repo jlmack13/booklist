@@ -79,5 +79,8 @@ body {
       width: 800px; }
       body .main-container div.container li {
         color: #434343; }
+      body .main-container div.container .no-info {
+        font-weight: normal;
+        color: #007597; }
 
 /*# sourceMappingURL=main.css.map */
