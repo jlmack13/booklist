@@ -1,72 +1,28 @@
-@import 'partials/variables', 'partials/footer';
+@import 'partials/variables',  'partials/footer', 'partials/mixins', 'partials/header', 'partials/forms';
+
+html {
+  height: 100%;
+}
 
 body {
   background-color: $primary;
   position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   h1, h2, h3, h4, h5, h6 {
     color: $secondary-text;
   }
-}
-
-header,footer {
-  background-color: white;
-}
-
-.main-container {
-  padding-bottom: 5%;
-  div.container {
-    font-family: $primary-font;
-    color: $secondary-text;
-    li {
-      color: $primary-text;
-    }
-    width: 800px;
-    form {
-      width: 600px;
-      margin: auto;
-      .format-option {
-        margin-right: 5px;
+  .main-container {
+    padding-bottom: 5%;
+    min-height: 500px;
+    div.container {
+      font-family: $primary-font;
+      color: $secondary-text;
+      li {
+        color: $primary-text;
       }
+      width: 800px;
     }
-  }
-}
-
-.home-buttons-container {
-  margin-left: 34%;
-  button {
-    background-color: $secondary;
-    border-color: $secondary;
-    &:hover {
-      background-color: $primary-accent;
-      border-color: $primary-accent;
-    }
-  }
-}
-
-#main-logo {
-  margin: auto;
-  display: flex;
-}
-#main-menu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-@media (min-width: 768px) {
-    #main-menu {
-        float: none;
-    }
-}
-
-//TO DO: button styles, will likely need to change id and make a mixin for all buttons on site
-form.delete-button {
-  display: inline-block;
-}
-#btn-main, #btn-edit, #btn-delete {
-  background-color: $secondary;
-  border-color: $secondary;
-  &:hover {
-    background-color: $primary-accent;
-    border-color: $primary-accent;
   }
 }

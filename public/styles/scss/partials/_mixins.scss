@@ -1,0 +1,8 @@
+@mixin button-style {
+  background-color: $secondary;
+  border-color: $secondary;
+  &:hover {
+    background-color: $primary-accent;
+    border-color: $primary-accent;
+  }
+}

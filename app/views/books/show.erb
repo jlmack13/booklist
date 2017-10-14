@@ -6,7 +6,7 @@
   <% if @book.favorite %>
     <h4>Favorite: <img src="/images/star.png" alt="star" width="20px"></h4>
   <% else %>
-    <h4>Favorite: <img src="/images/x-mark.png" alt="x mark" width="20px"></h4>
+    <h4>Favorite: <img src="/images/xmark.png" alt="x mark" width="20px"></h4>
   <% end %>
 
   <a href="/books/<%= @book.id %>/edit"><button type="submit" class="btn btn-primary" id="btn-edit">Edit Book</button></a>

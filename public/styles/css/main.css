@@ -1,6 +1,11 @@
 footer {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  height: 60px; }
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
   footer #footer-right {
     float: right;
     text-align: right;
@@ -16,28 +21,24 @@ footer {
   footer p {
     margin: auto; }
 
-body {
-  background-color: #14133d;
-  position: relative; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    color: #fff; }
-
-header, footer {
+header {
   background-color: white; }
+  header #main-logo {
+    margin: auto;
+    display: flex; }
+  header #main-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  @media (min-width: 768px) {
+    header #main-menu {
+      float: none; } }
 
-.main-container {
-  padding-bottom: 5%; }
-  .main-container div.container {
-    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #fff;
-    width: 800px; }
-    .main-container div.container li {
-      color: #434343; }
-    .main-container div.container form {
-      width: 600px;
-      margin: auto; }
-      .main-container div.container form .format-option {
-        margin-right: 5px; }
+form {
+  width: 600px;
+  margin: auto; }
+  form .format-option {
+    margin-right: 5px; }
 
 .home-buttons-container {
   margin-left: 34%; }
@@ -48,18 +49,6 @@ header, footer {
       background-color: #007597;
       border-color: #007597; }
 
-#main-logo {
-  margin: auto;
-  display: flex; }
-
-#main-menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
-
-@media (min-width: 768px) {
-  #main-menu {
-    float: none; } }
 form.delete-button {
   display: inline-block; }
 
@@ -69,5 +58,26 @@ form.delete-button {
   #btn-main:hover, #btn-edit:hover, #btn-delete:hover {
     background-color: #007597;
     border-color: #007597; }
+
+html {
+  height: 100%; }
+
+body {
+  background-color: #14133d;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #fff; }
+  body .main-container {
+    padding-bottom: 5%;
+    min-height: 500px; }
+    body .main-container div.container {
+      font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: #fff;
+      width: 800px; }
+      body .main-container div.container li {
+        color: #434343; }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,11 @@ footer {
   //clear: both;
   font-family: $primary-font;
   height: 60px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   #footer-right {
     float: right;

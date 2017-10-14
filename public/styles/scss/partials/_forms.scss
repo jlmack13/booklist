@@ -1,0 +1,23 @@
+form {
+  width: 600px;
+  margin: auto;
+  .format-option {
+    margin-right: 5px;
+  }
+}
+
+//******* BUTTON STYLES *********
+.home-buttons-container {
+  margin-left: 34%;
+  button {
+  @include button-style;
+  }
+}
+
+form.delete-button {
+  display: inline-block;
+}
+
+#btn-main, #btn-edit, #btn-delete {
+  @include button-style;
+}
