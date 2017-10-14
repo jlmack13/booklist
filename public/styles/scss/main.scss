@@ -13,7 +13,7 @@ header,footer {
 }
 
 .main-container {
-  //width: 800px;
+  padding-bottom: 5%;
   div.container {
     font-family: $primary-font;
     color: $secondary-text;
@@ -24,6 +24,9 @@ header,footer {
     form {
       width: 600px;
       margin: auto;
+      .format-option {
+        margin-right: 5px;
+      }
     }
   }
 }

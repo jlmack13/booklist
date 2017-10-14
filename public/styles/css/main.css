@@ -25,15 +25,19 @@ body {
 header, footer {
   background-color: white; }
 
-.main-container div.container {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  width: 800px; }
-  .main-container div.container li {
-    color: #434343; }
-  .main-container div.container form {
-    width: 600px;
-    margin: auto; }
+.main-container {
+  padding-bottom: 5%; }
+  .main-container div.container {
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    width: 800px; }
+    .main-container div.container li {
+      color: #434343; }
+    .main-container div.container form {
+      width: 600px;
+      margin: auto; }
+      .main-container div.container form .format-option {
+        margin-right: 5px; }
 
 .home-buttons-container {
   margin-left: 34%; }
@@ -65,8 +69,5 @@ form.delete-button {
   #btn-main:hover, #btn-edit:hover, #btn-delete:hover {
     background-color: #007597;
     border-color: #007597; }
-
-#goal {
-  color: #434343; }
 
 /*# sourceMappingURL=main.css.map */

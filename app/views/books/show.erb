@@ -4,9 +4,9 @@
   <h4>Length: <% if @book.length != nil %> <%= @book.length%> Pages <%end %> </h4>
   <h4>Format: <%= @book.format%></h4>
   <% if @book.favorite %>
-    <h4>Favorite: <img src="/images/star.svg" alt="star" width="20px"></h4>
+    <h4>Favorite: <img src="/images/star.png" alt="star" width="20px"></h4>
   <% else %>
-    <h4>Favorite: <img src="/images/cross.svg" alt="x symbol" width="20px"></h4>
+    <h4>Favorite: <img src="/images/x-mark.png" alt="x mark" width="20px"></h4>
   <% end %>
 
   <a href="/books/<%= @book.id %>/edit"><button type="submit" class="btn btn-primary" id="btn-edit">Edit Book</button></a>
@@ -15,6 +15,3 @@
     <button type="submit" class="btn btn-primary" id="btn-delete">Delete Book</button>
   </form>
 </div>
-
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
